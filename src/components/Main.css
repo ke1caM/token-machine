@@ -1,0 +1,90 @@
+.main__dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.main__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #4e5157;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #1f273d;
+}
+
+.main__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.switch__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 0 none black;
+  border-radius: 12px;
+  background: rgb(26, 66, 226);
+  color: white;
+  font-size: 14px;
+}
+
+.switch__button:active {
+  transform: translateY(2px);
+}
+
+.inputs__input {
+  padding: 10px;
+  width: 500px;
+  font-size: 26px;
+  border: 1px solid #4e5157;
+  border-radius: 12px;
+}
+
+.main__amount {
+  font-size: 30px;
+  color: white;
+}
+
+.approve__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 0 none black;
+  border-radius: 12px;
+  background: rgb(26, 66, 226);
+  color: white;
+  font-size: 30px;
+  width: 100%;
+}
+
+.submit__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 0 none black;
+  border-radius: 12px;
+  background: rgb(26, 66, 226);
+  color: white;
+  font-size: 30px;
+  width: 100%;
+}
+
+@media all and (max-width: 590px) {
+  .main__form {
+    max-width: 300px;
+  }
+  .inputs__input {
+    width: 100%;
+  }
+}

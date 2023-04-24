@@ -1,0 +1,58 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 160px;
+}
+
+.navbar__logo {
+  font-family: "Alkatra", "sans-serif";
+  font-size: 40px;
+  color: white;
+}
+
+.connect__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px 32px;
+  border: 0 none black;
+  border-radius: 12px;
+  background: rgb(26, 66, 226);
+  background: linear-gradient(
+    45deg,
+    rgba(26, 66, 226, 1) 43%,
+    rgba(119, 144, 246, 1) 100%
+  );
+  color: white;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  transition: box-shadow 0.15s, transform 0.15s;
+  font-size: 18px;
+}
+
+.connect__button:hover {
+  transform: translateY(-2px);
+}
+
+.connect__button:active {
+  transform: translateY(2px);
+}
+
+@media all and (max-width: 870px) {
+  nav {
+    padding: 40px;
+  }
+}
+
+@media all and (max-width: 590px) {
+  .navbar__logo {
+    font-size: 24px;
+  }
+
+  .connect__button {
+    font-size: 12px;
+    padding: 12px 24px;
+  }
+}
